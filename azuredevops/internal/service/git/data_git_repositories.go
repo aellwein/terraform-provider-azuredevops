@@ -7,14 +7,14 @@ import (
 	"log"
 	"strings"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/git"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 )
 
 // DataGitRepositories schema and implementation for git repo data source

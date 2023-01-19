@@ -1,10 +1,10 @@
 package serviceendpoint
 
 import (
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/serviceendpoint"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 )
 
 // ResourceServiceEndpointIncomingWebhook schema and implementation for incoming webhook service endpoint resource

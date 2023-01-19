@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 )
 
 // SetPrincipalPermissions sets permissions for a specific security namespac

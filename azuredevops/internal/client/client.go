@@ -7,6 +7,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/aellwein/terraform-provider-azuredevops/version"
 	v5api "github.com/microsoft/azure-devops-go-api/azuredevops"
 	v5graph "github.com/microsoft/azure-devops-go-api/azuredevops/graph"
 	v5taskagent "github.com/microsoft/azure-devops-go-api/azuredevops/taskagent"
@@ -25,7 +26,6 @@ import (
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/serviceendpoint"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/taskagent"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/workitemtracking"
-	"github.com/microsoft/terraform-provider-azuredevops/version"
 )
 
 // AggregatedClient aggregates all of the underlying clients into a single data

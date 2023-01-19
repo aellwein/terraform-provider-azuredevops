@@ -7,8 +7,8 @@ package acceptancetests
 import (
 	"testing"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 )
 
 func TestAccProjectFeatures_EnableUpdateFeature(t *testing.T) {

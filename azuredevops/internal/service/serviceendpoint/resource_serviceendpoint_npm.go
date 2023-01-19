@@ -1,12 +1,12 @@
 package serviceendpoint
 
 import (
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/tfhelper"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/serviceendpoint"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/tfhelper"
 )
 
 // ResourceServiceEndpointNpm schema and implementation for npm service endpoint resource

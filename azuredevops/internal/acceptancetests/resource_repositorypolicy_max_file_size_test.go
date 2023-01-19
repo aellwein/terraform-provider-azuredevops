@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 )
 
 const fileSizeTfNode = "azuredevops_repository_policy_max_file_size.p"

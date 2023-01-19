@@ -1,9 +1,9 @@
 package core
 
 import (
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
 )
 
 func DataTeam() *schema.Resource {

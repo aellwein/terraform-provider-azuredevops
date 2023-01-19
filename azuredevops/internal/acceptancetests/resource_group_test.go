@@ -8,16 +8,16 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/graph"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
 )
 
 func TestAccGroupResource_CreateAndUpdate(t *testing.T) {
-	t.Skip("Skipping test TestAccGroupResource_CreateAndUpdate: transient failures cause inconsistent results: https://github.com/microsoft/terraform-provider-azuredevops/issues/174")
+	t.Skip("Skipping test TestAccGroupResource_CreateAndUpdate: transient failures cause inconsistent results: https://github.com/aellwein/terraform-provider-azuredevops/issues/174")
 
 	projectName := testutils.GenerateResourceName()
 	groupName := testutils.GenerateResourceName()

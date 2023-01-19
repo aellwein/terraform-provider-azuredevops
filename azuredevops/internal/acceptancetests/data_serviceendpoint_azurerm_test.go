@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
 )
 
 func TestAccServiceEndpointAzureRM_with_serviceEndpointID_DataSource(t *testing.T) {

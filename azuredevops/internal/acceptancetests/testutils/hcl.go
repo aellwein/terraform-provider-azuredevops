@@ -198,7 +198,7 @@ func HclProjectGitRepositoryImport(gitRepoName string, projectName string) strin
 		initialization {
 		   init_type = "Import"
 		   source_type = "Git"
-		   source_url = "https://github.com/microsoft/terraform-provider-azuredevops.git"
+		   source_url = "https://github.com/aellwein/terraform-provider-azuredevops.git"
 		 }
 	}`, gitRepoName)
 	projectResource := HclProjectResource(projectName)

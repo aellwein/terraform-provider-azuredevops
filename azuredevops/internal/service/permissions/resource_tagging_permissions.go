@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	securityhelper "github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/service/permissions/utils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	securityhelper "github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/service/permissions/utils"
 )
 
 // ResourceTaggingPermissions schema and implementation for tagging permission resource

@@ -7,12 +7,12 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/secretmemo"
 	"github.com/hashicorp/go-uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/core"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/secretmemo"
 )
 
 func HashString(s string) int {

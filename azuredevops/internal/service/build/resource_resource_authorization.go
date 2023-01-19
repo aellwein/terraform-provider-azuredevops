@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/build"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 )
 
 const msgErrorFailedResourceCreate = "error creating authorized resource: %+v"

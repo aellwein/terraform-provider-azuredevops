@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/acceptancetests/testutils"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
 )
 
 func hclAreaPermissions(projectName string, permissions map[string]map[string]string) string {

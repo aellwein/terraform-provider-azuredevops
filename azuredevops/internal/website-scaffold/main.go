@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops"
 )
 
 // NOTE: since we're using `go run` for these tools all of the code needs to live within the main.go

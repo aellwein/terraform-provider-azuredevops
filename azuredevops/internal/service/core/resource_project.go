@@ -7,6 +7,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
@@ -15,10 +19,6 @@ import (
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/core"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/featuremanagement"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/operations"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/converter"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
 )
 
 // timeout used to wait for operations on projects to finish before executing an update or delete

@@ -8,14 +8,14 @@ import (
 	"log"
 	"strings"
 
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/client"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
+	"github.com/aellwein/terraform-provider-azuredevops/azuredevops/internal/utils/tfhelper"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/v6/core"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/client"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/datahelper"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/suppress"
-	"github.com/microsoft/terraform-provider-azuredevops/azuredevops/internal/utils/tfhelper"
 )
 
 // DataProjects schema and implementation for projects data source
